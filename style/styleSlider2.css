@@ -29,12 +29,14 @@ body{
    padding: 16px;
    
 }
-.repair-brands-wrapper__slides {
+/* Стили для переноса*/
+.repair-brands-wrapper__slides--technictypes {
     width: 240px; 
-    height: 72px; 
+    height: 160px; 
     border-radius: 6px;
     border: 1px solid #EAEAEA;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
@@ -42,12 +44,20 @@ body{
     background-color: #fff;
 }
 
+.repair-brands-wrapper__slides--title-text {
+margin: 0;
 
-
+}
+.repair-brands-wrapper__slides--go-technictypes {
+    margin-left: auto;
+}
+.repair-brands-wrapper__slides--title {
+    margin-right: auto;
+}
 .swiper-container {
     min-width: 320px;
-    height: 154px;
-   
+    height: 220px;
+   /*-------------------------*/
   }
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet  {
     width: 12px;
@@ -55,40 +65,16 @@ body{
     background-color: #B5B6BC;
 
 }
-.repair-brands-wrapper__showed-768px {
+.repair-brands-wrapper__showed-768px--technictypes {
     display: none;
 
 }
 
-.show-more__aboutBrands{
-   display: none;
 
-}
 
-@media (min-width: 576px) {
-    .menu__icon--disabled{
-        display: block;        
-    }
-    .header__third-section
-    {
-        margin-right: 5px;
-    }
-    .main__wrapper{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .show-more__logo{
-        margin-right: 25px;
-        margin-left: 24px;
-        align-self: start;
-
-    }
-        
-}
 @media (min-width: 768px) {
-  
-    .repair-brands-wrapper__showed-768px {
+ 
+    .repair-brands-wrapper__showed-768px--technictypes {
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -98,9 +84,18 @@ body{
         overflow-y: hidden;
     
     }
-    
+    /*.showed {
+        height: auto;
+        box-sizing: content-box;
+        overflow-y: visible;
+        padding-top: 10px;
+        transition-duration: 500ms;
+        transition-property: all;
+             }
+*/
+
    
-    .repair-brands-wrapper__slides{
+    .repair-brands-wrapper__slides--technictypes{
         flex-shrink: 0;
         margin: 8px calc((100% - 672px)/8);
         width: 224px;
@@ -110,7 +105,7 @@ body{
     .swiper-container{
         display: none;
     }
-    .show-more__aboutBrands{
+    .show-more__about--technictypes{
         display: block;
         font-weight: 500;
         font-style: normal;
@@ -122,7 +117,7 @@ body{
         border-radius: 6px;
     
     }
-    .show-more__aboutBrands:hover {
+    .show-more__about--technictypes:hover {
         border: 2px solid #B8FFEC;
         border-radius: 6px;
         background-color: #FFFFFF;
@@ -131,49 +126,29 @@ body{
     .show-more__icon{
         margin-right: 16px;
     }
-}
-    @media (min-width: 1123px) {
-      
-        .menu__icon{
-            align-self:center;
-            margin-left: 8px;
-        }
-     
-         .repair-brands-wrapper__slides{
+
+    @media (min-width: 1120px) {
+        
+         .repair-brands-wrapper__slides--technictypes{
             flex-shrink: 0;
             margin: 8px 16px;
             width: 240px;
             transition-duration: 1s;
         }
-   
-        /*.repair-brands-wrapper__showed-768px{
-            margin-top: 1px;
+        /*.repair-brands-wrapper__showed-768px {
+            height: 100px;
+            overflow-y: hidden;
+            padding-top: 80px;
+        
         }*/
         
-        .showed {
+            .showed {
             height: auto;
             box-sizing: content-box;
             overflow-y: visible;
-            /*padding-top: 10px;*/
+           /* padding-top: 10px;*/
             transition-duration: 500ms;
             transition-property: all;
                  }
-    
     }
-    @media (min-width: 1682px) {
-        .repair-brands-wrapper__showed-768px {
-            height: auto;
-            overflow-y: hidden;
-            padding-top: 0;
-
-         }
-    }
-    .showed {
-        height: auto;
-        box-sizing: content-box;
-        overflow-y: visible;
-       /* padding-top: 10px;*/
-        transition-duration: 500ms;
-        transition-property: all;
-             }
-
+}
