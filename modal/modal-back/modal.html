@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="modalStile.css">
+    <title>modal</title>
+</head>
+<body class="modal-body">
+    <div class="modal">
+            <div class="modal__content">
+                <button class="modal__close-btn"></button>
+                <p class="modal__title">Обратная связь</p>
+                <form class="modal__form" action="#" method="POST">
+                    <input type="text" name="name" id="modal__user-name" placeholder="Имя" class="modal__form--user">
+                    <input type="tel" name="phone" id="modal__user-phone" placeholder="Телефон" class="modal__form--user">
+                    <input type="email" name="email" id="modal__user-email" placeholder="Электронная почта" class="modal__form--user">
+                    <textarea name="message" id="modal__user-message" cols="22" rows="5" class="modal__form--user" placeholder="Сообщение"></textarea>
+                    <p class="modal__agree">Нажимая “отправить”, вы даете согласие на <span class="modal__agree--assigned">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal__agree--assigned">политикой конфиденциальности</span> </p>
+                    <input type="submit" value=""class="modal___form--submit" >
+        
+                </form>
+                
+            </div>
+        </div>
+</body>
+</html>
