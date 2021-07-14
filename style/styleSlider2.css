@@ -70,8 +70,8 @@ margin: 0;
 
 }
 .show-more__about--technictypes {
-    display: none
-    ;}
+    display: none;
+}
 
 
 
@@ -87,16 +87,7 @@ margin: 0;
         overflow-y: hidden;
     
     }
-    /*.showed {
-        height: auto;
-        box-sizing: content-box;
-        overflow-y: visible;
-        padding-top: 10px;
-        transition-duration: 500ms;
-        transition-property: all;
-             }
-*/
-
+   
    
     .repair-brands-wrapper__slides--technictypes{
         flex-shrink: 0;

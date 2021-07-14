@@ -13,9 +13,10 @@
     position: absolute;
     left: 0;
     top: 0;
-
-
+    visibility: hidden;
 }
+
+
 .menu-header {
     display: flex;
     justify-content: space-between;
@@ -107,7 +108,28 @@
     filter: drop-shadow( 1px 1px 1px black );
     opacity: 0.9;
 }
-.main-menu__list--link:hover{
+/*.main-menu__list--link:hover{
     opacity: 0.8;  
+    
+}*/
+.active-menu {
+        display: block;
+        visibility: visible;
+        width: 360px;
+        transition-property: width;
+        transition-duration: 1s;
+    }
+@media (min-width: 1440px) {
+       .menu-list {
+        display: block;
+        visibility: visible;
+        box-shadow: none;
+        width: 360px;
+        transition-property: width;
+        transition-duration: 1s;
+    }
+    .menu-header__links-wrapper a:nth-child(1) {
+        display: none;
+    }
     
 }

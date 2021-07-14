@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style\style.css">
     <link rel="stylesheet" href="style\fonts.css">
+    <link rel="stylesheet" href="style\styleMainMenu.css">
     <link rel="stylesheet" href="style\styleSlider.css">
     <link rel="stylesheet" href="style\styleSlider2.css">
     <link rel="stylesheet" href="style\styleSlider3.css">
@@ -16,12 +17,49 @@
 </head>
 
 <body>
-    <header class="header">
+    <nav class="menu-list ">
+        <header class="menu-header">
+            <div class="menu-header__links-wrapper"> 
+                <a href="#" class="main__links" ><img src="images/burger.svg" alt="burger" class=menu-header__icon></a>
+                <a href="#" class="main__links"><img src="images/Group.svg" alt="logo" class=menu-header__logo></a>
+            </div>
+               
+                <a href="#" class="main__links"><img src="images\search.svg" alt="search" class="menu-header__search"></a>
+        </header>
+        <main class="main-menu">
+           <ul class="main-menu__list">
+               <li class="main-menu__list--item active"> <a href="#" class="main-menu__list--link ">Ремонт техники</a></li>
+               <li class="main-menu__list--item"> <a href="#" class="main-menu__list--link">Услуги и сервисы</a></li>
+               <li class="main-menu__list--item"> <a href="#" class="main-menu__list--link">Корпоративным клиентам</a></li>
+               <li class="main-menu__list--item"> <a href="#" class="main-menu__list--link">Продавцам техники</a></li>
+               <li class="main-menu__list--item"> <a href="#" class="main-menu__list--link">Партнерам</a></li>
+               <li class="main-menu__list--item"> <a href="#" class="main-menu__list--link">Производителям</a></li>
+               <li class="main-menu__list--item"><a href="#" class="main-menu__list--link">Наши сервисные центры</a></li>
+               <li class="main-menu__list--item"> <a href="#" class="main-menu__list--link">Контакты</a></li>
+           </ul>
+        </main>
+        <footer class="menu-footer">
+            <div class="menu-footer__links">
+                <a href="" class="menu-footer__link"><img src="images\call.svg" alt="" class="menu-footer__link--call"></a>
+                <a href="" class="menu-footer__link"><img src="images\chat.svg" alt="" class="menu-footer__link--chat"></a>
+                <a href="" class="menu-footer__link"><img src="images\profile.svg" alt="" class="menu-footer__link--profile"></a>
+            </div>
+            <p class="menu-footer__mail">mail@cps.com</p>
+            <p class="menu-footer__phone">8 800 890 8900</p>
+            <div class="menu-footer__languages">
+                <button class="menu-footer__languages--button">RU</button>
+                <button class="menu-footer__languages--button">EN</button>
+                <button class="menu-footer__languages--button">CH</button>
+            </div>
+        </footer>
+    </nav>
+    <div class="common-container"> 
+        <header class="header">
         <div class="header__first-section">
             <div class="main__title-wrapper">
                 <h1 class="main__title">Услуги и сервисы</h1>
             </div>
-            <a href="mainMenu.html" class="main__links"><img src="images/burger.svg" alt="burger" class=menu__icon></a>
+            <a href="#" class="main__links" id="main__menu-burger"><img src="images/burger.svg" alt="burger" class=menu__icon></a>
             <img src="images/divider.svg" alt="" class="menu__icon divider menu__icon--disabled">
             <a href="#" class="main__links"><img src="images/Group.svg" alt="logo" class=menu__logo></a>
         </div>
@@ -554,8 +592,13 @@
         </div>
   
     </footer>
+</div>
+   
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
     <script src="main.js"></script>
+    <script src="showmore.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

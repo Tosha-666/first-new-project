@@ -171,7 +171,10 @@ height: 40px;
    margin-right: 16px;
 
 }
-
+.blur{
+    filter: blur(30px);
+    opacity: 0.5;
+}
 
 
 
@@ -196,6 +199,7 @@ height: 40px;
          }
     .show-more__logo--pic{
             width: 45vw;
+}
 }
 @media (min-width: 768px) {
    .main__wrapper{
@@ -223,9 +227,7 @@ height: 40px;
         max-width: 45vw;
     }
     }
-
-
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
         .main__wrapper--section--text{
             min-height: fit-content;
             max-height: 160px;
@@ -277,6 +279,8 @@ height: 40px;
             height: 40px;
             
          }
-     
+        .common-container {
+            margin-left: 360px;
+        }
+       
     }
-}
