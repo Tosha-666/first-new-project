@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style\styleSlider.css">
     <link rel="stylesheet" href="style\styleSlider2.css">
     <link rel="stylesheet" href="style\styleSlider3.css">
+    <link rel="stylesheet" href="style\modalFeedbackStile.css">
+    <link rel="stylesheet" href="style\modalCallStile.css">
     <link rel="stylesheet" href="style\footer.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 </head>
@@ -20,7 +22,7 @@
     <nav class="menu-list ">
         <header class="menu-header">
             <div class="menu-header__links-wrapper"> 
-                <a href="#" class="main__links" ><img src="images/burger.svg" alt="burger" class=menu-header__icon></a>
+                <a href="#" class="main__links" ><img src="images\close.svg" alt="burger" class=menu-header__icon></a>
                 <a href="#" class="main__links"><img src="images/Group.svg" alt="logo" class=menu-header__logo></a>
             </div>
                
@@ -40,9 +42,9 @@
         </main>
         <footer class="menu-footer">
             <div class="menu-footer__links">
-                <a href="" class="menu-footer__link"><img src="images\call.svg" alt="" class="menu-footer__link--call"></a>
-                <a href="" class="menu-footer__link"><img src="images\chat.svg" alt="" class="menu-footer__link--chat"></a>
-                <a href="" class="menu-footer__link"><img src="images\profile.svg" alt="" class="menu-footer__link--profile"></a>
+                <a href="#" class="menu-footer__link modal__call--button"><img src="images\call.svg" alt="" class="menu-footer__link--call"></a>
+                <a href="#" class="menu-footer__link modal__feedback--button"><img src="images\chat.svg" alt="" class="menu-footer__link--chat"></a>
+                <a href="#" class="menu-footer__link"><img src="images\profile.svg" alt="" class="menu-footer__link--profile"></a>
             </div>
             <p class="menu-footer__mail">mail@cps.com</p>
             <p class="menu-footer__phone">8 800 890 8900</p>
@@ -64,8 +66,8 @@
             <a href="#" class="main__links"><img src="images/Group.svg" alt="logo" class=menu__logo></a>
         </div>
         <div class="header__third-section">
-            <a href="#" class="main__links"><img src="images/call.svg" alt="repair" class="menu__icon menu__icon--disabled"></a>
-            <a href="#" class="main__links"><img src="images/chat.svg" alt="check" class="menu__icon menu__icon--disabled"></a>
+            <a href="#" class="main__links modal__call--button"><img src="images/call.svg" alt="repair" class="menu__icon menu__icon--disabled"></a>
+            <a href="#" class="main__links modal__feedback--button"><img src="images/chat.svg" alt="check" class="menu__icon menu__icon--disabled"></a>
             <a href="#" class="main__links"><img src="images/profile.svg" alt="check" class="menu__icon menu__icon--disabled"></a>
             <img src="images/divider.svg" alt="" class="menu__icon divider">
             <span class="header__explanation">Оставить заявку</span>
@@ -580,6 +582,9 @@
            </div>
         
     </section>
+   
+      
+    
     <footer class="footer">
         <div class="footer__section">
             <p class="footer__section--inner">© 2019 CPS <br>Разработано командой Apesong</p>
@@ -593,12 +598,44 @@
   
     </footer>
 </div>
-   
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+     <div class="modal__feedback">
+            <div class="modal__content">
+                <button class="modal__close-btn"></button>
+                <p class="modal__title">Обратная связь</p>
+                <form class="modal__form" action="#" method="POST">
+                    <input type="text" name="name" id="modal__user-name" placeholder="Имя" class="modal__form--user">
+                    <input type="tel" name="phone" id="modal__user-phone" placeholder="Телефон" class="modal__form--user">
+                    <input type="email" name="email" id="modal__user-email" placeholder="Электронная почта" class="modal__form--user">
+                    <textarea name="message" id="modal__user-message" cols="22" rows="5" class="modal__form--user" placeholder="Сообщение"></textarea>
+                    <p class="modal__agree">Нажимая “отправить”, вы даете согласие на <span class="modal__agree--assigned">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal__agree--assigned">политикой конфиденциальности</span> </p>
+                    <input type="submit" value=""class="modal___form--submit" >
+        
+                </form>
+                
+            </div>
+        </div>
+    
+    
+        <div class="modal__call">
+        <div class="modal__content">
+            <button class="modal__close-btn"></button>
+            <p class="modal__title">Заказать звонок</p>
+            <form class="modal__form" action="#" method="POST">
+                <input type="tel" name="phone" id="modal__user-phone" placeholder="Телефон" class="modal__form--user">
+                <p class="modal__agree">Нажимая “отправить”, вы даете согласие на <span class="modal__agree--assigned">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal__agree--assigned">политикой конфиденциальности</span> </p>
+                <input type="submit" value=""class="modal___form--submit" >
+    
+            </form>
+        </div>
+    </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="main.js"></script>
-    <script src="showmore.js"></script>
     <script src="menu.js"></script>
+    <script src="showmore.js"></script>
+    <script src="modalFeedback.js"></script>
+    <script src="modalCall.js"></script>
+     
 </body>
 
 </html>

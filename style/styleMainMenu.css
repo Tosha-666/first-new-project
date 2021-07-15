@@ -118,7 +118,7 @@
         width: 360px;
         transition-property: width;
         transition-duration: 1s;
-    }
+    }   
 @media (min-width: 1440px) {
        .menu-list {
         display: block;
@@ -131,5 +131,12 @@
     .menu-header__links-wrapper a:nth-child(1) {
         display: none;
     }
-    
-}
+  
+}  
+/*.active-menu {
+        display: block;
+        visibility: visible;
+        width: 360px;
+        transition-property: width;
+        transition-duration: 1s;
+}*/

@@ -8,10 +8,9 @@ const commoncontainer = document.querySelector('.common-container ');
 openmenu.addEventListener('click', () => {
     menu.classList.add('active-menu');
     commoncontainer.classList.add('blur')
-    
-  }
+      }
  );
 
-console.log(repairBrands);
+
 
 

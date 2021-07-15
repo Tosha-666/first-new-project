@@ -1,5 +1,5 @@
 
-.modal {
+.modal__feedback {
     width: 320px;
     padding: 16px 8px;
     background-color: #FFFFFF;
@@ -9,6 +9,7 @@
     box-sizing: border-box;
     transition-property: all;
     transition-duration: 1s;
+    display: none;
 
 }
 .modal__content {
@@ -16,7 +17,8 @@
 }
 
 .modal__close-btn {
-    background: url('close.svg'), no-repeat;
+    background-image: url('../images/close.svg');
+    background-repeat: no-repeat;
     padding: 0;
     border: none;
     font: inherit;
@@ -26,7 +28,7 @@
     height: 40px;
     transition-property: all;
     transition-duration: 1s;
-  
+    
 }
 
 .modal__title {
@@ -77,8 +79,7 @@ form .modal__form--user:nth-child(4){
     height: auto;
 }
 .modal___form--submit {
-    background: url('submit.svg'), no-repeat;
-   
+    background: url('../images/submit.svg'), no-repeat;
     display: block;
     padding: 0;
     border: none;
@@ -90,8 +91,13 @@ form .modal__form--user:nth-child(4){
     margin-left: 160px;
     margin-top: 5px;
 }
+.active__feedback{
+    display: block;
+    position: absolute;
+    }
+
 @media (min-width: 1120px) {
-    .modal {
+    .modal__feedback {
         width: 440px;
         padding: 40px 32px;
         background-color: #FFFFFF;
@@ -136,3 +142,9 @@ form .modal__form--user:nth-child(4){
         transition-duration: 1s;
     }
 }
+.active__feedback{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
