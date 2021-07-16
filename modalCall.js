@@ -15,7 +15,7 @@ for (let i = 0; i < callButton.length; i++){
     modalCall.classList.remove('active__call');
     commonContainerBlurFeedback.classList.remove('blur')
  }
-*/
+
 function outsideEvtListener(e) {
     if (e.target === modalCall || modalCall.contains(e.target)) {
         return;
@@ -27,4 +27,4 @@ function outsideEvtListener(e) {
 }
 
 
-document.addEventListener('click', outsideEvtListener);
+document.addEventListener('click', outsideEvtListener);*/
