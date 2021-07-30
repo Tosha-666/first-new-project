@@ -142,7 +142,7 @@ form .modal__form--user:nth-child(4){
         transition-duration: 1s;
     }
 }
-.active__feedback{
+.active__modal{
     display: block;
     position: absolute;
     right: 0;
