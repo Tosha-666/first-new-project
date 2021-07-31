@@ -1,5 +1,5 @@
-const blur = document.getElementsByClassName('blur');
-
+const closeModalCall = document.querySelector('.call-close');
+const closeModalFeedback= document.querySelector('.feedback-close');
 
 /*
 Последний вариант
@@ -57,29 +57,32 @@ document.addEventListener('click', function(e) {
       commonContainerBlurFeedback.classList.remove('blur')
    }
   */
-const closeModalFunc = function () {
+const closeModalFunc = function (evt) {
     modalCall.classList.remove('active__modal');
     modalFeedback.classList.remove('active__modal');
     commonContainerBlurFeedback.classList.remove('blur')
+     
 
   }
 function outsideEvtListener(evt) {
     
-    if (modalCall.classList.contains ('active__modal')) {}
-    if (evt.target == modalCall || modalCall.contains(evt.target)) {
-          return
-          } 
-          closeModalFunc();
+    if (modalCall.classList.contains('active__modal')) {
+        if (evt.target == modalCall || modalCall.contains(evt.target)&& evt.target !==closeModalCall) {
+            return
+        }
+        closeModalFunc(evt);
+    }
 }
           
 function outsideEvtListenerFeedback(evt) {
     
-    if (modalFeedback.classList.contains('active__modal')) { }
-    if (evt.target == modalFeedback || modalFeedback.contains(evt.target)) {
+    if (modalFeedback.classList.contains('active__modal')) {
+        if (evt.target == modalFeedback || modalFeedback.contains(evt.target)&& evt.target !== closeModalFeedback) {
                   
-        return
+            return
+        }
+        closeModalFunc(evt);
     }
-    closeModalFunc();
 }
          
 document.addEventListener('click', outsideEvtListener);

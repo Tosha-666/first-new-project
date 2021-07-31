@@ -1,7 +1,7 @@
 const callButton = document.querySelectorAll('.modal__call--button');
 const modalCall = document.querySelector('.modal__call');
 const commonContainerBlurCall = document.querySelector('.common-container ');
-const closeModalCall = document.querySelector('.call-close');
+
 
 
 
